@@ -13,8 +13,8 @@ st.title("Rubik By Kuze")
 st.divider()
 
 try:
-    if os.path.exists("Data_Rubik1.csv"):
-        df = pd.read_csv("Data_Rubik1.csv")
+    if os.path.exists("data_rubik1.csv"):
+        df = pd.read_csv("data_rubik1.csv")
         
         # Membersihkan data dari nilai kosong di kolom penting
         df = df.dropna(subset=['foto', 'kategori', 'nama'])
@@ -37,7 +37,7 @@ try:
                         st.image(nama_foto, use_container_width=True)
                     else:
                         # Tampilkan placeholder jika foto fisik tidak ada
-                        st.warning(f"📷 Foto tidak ditemukan: {nama_foto}")
+                        st.warning(f"Foto tidak ditemukan: {nama_foto}")
                     
                     st.subheader(row['nama'])
 
@@ -76,6 +76,6 @@ with col_info2:
     link_wa = f"https://wa.me/{no_hp}?text={pesan_wa.replace(' ', '%20')}"
 
     st.markdown("**WhatsApp:**")
-    st.link_button("💬 Pesan Sekarang via WhatsApp", link_wa)
+    st.link_button("Pesan Sekarang via WhatsApp", link_wa)
     
 st.caption("© 2026 Rubik By Kuze - Semua Hak Dilindungi")
