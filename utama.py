@@ -22,7 +22,7 @@ try:
         daftar_kategori = df['kategori'].unique()
 
         for kat in daftar_kategori:
-            st.header(f"Rubik Jenis {str(kat).capitalize()}")
+            st.header(f"Rubik {str(kat).capitalize()}")
             data_per_kat = df[df['kategori'] == kat]
 
             # Membuat grid 4 kolom
