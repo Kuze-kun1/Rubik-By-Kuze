@@ -6,8 +6,8 @@ import os
 st.set_page_config(page_title="Rubik By Kuze", layout="wide")
 
 # 1. Tampilkan Banner Canva
-if os.path.exists("Rubik By Kuze.PNG"):
-    st.image("Rubik By Kuze.PNG", use_container_width=True)
+if os.path.exists("Rubik By Kuze.png"):
+    st.image("Rubik By Kuze.png", use_container_width=True)
 
 st.title("Rubik By Kuze")
 st.divider()
